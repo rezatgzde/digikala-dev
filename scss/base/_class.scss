@@ -1,0 +1,70 @@
+//!-------------------------------- width project----------------------//
+
+.container2xl{
+    width: 80vw;
+    margin: auto;
+    @include Responsive(tablet){
+        width: 98vw;
+    }
+}
+
+
+//!-------------------------------- flex class----------------------//
+.flex-center{
+    @include centerrizetag();
+}
+.flex-between{
+    @include centerrizetag($justify:space-between)
+}
+
+.flex-around{
+    @include centerrizetag($justify:space-around)
+}
+
+//!-------------------------------- position class----------------------//
+.position-center{
+    @include positionCenter();
+}
+.text-justify{
+  text-align:justify ;
+}
+
+//!-------------------------------- fontSize class----------------------//
+
+.fs-1{
+    font-size: $fs-1 !important ;
+}
+
+.fs-2{
+    font-size: $fs-2 !important ;
+}
+
+.fs-3{
+    font-size: $fs-3 !important ;
+}
+
+.fs-4{
+    font-size: $fs-4 !important ;
+}
+
+.fs-5{
+    font-size: $fs-5 !important ;
+}
+
+.fs-6{
+    font-family: $fs-6 !important;
+}
+
+//!----------------------------------------- ellipse class ---------------------------//
+
+.ellipsis-1{
+    @include lineBreak(1);
+}
+
+.ellipsis-2{
+    @include lineBreak();
+}
+
+.ellipsis-3{
+    @include lineBreak(3);
+}

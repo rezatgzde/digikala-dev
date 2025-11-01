@@ -1,0 +1,17 @@
+.buy{
+    &__content{
+        @include Responsive(tablet){
+            border: none !important;
+        }
+        &-img{
+            @include Responsive(tablet){
+                width: 60% !important;
+            }
+        }
+        &-item{
+            @include Responsive(tablet){
+                border: none !important;
+            }
+        }
+    }
+}

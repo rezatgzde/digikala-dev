@@ -1,0 +1,8 @@
+.brands{
+    &__img{
+        @include Responsive(tablet){
+            max-width: 8rem;
+        }
+        max-width: 5rem;
+    }
+}

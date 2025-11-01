@@ -1,0 +1,41 @@
+.header{
+    &__banner{
+        @include Responsive(tablet){
+            min-height: 40px;
+            object-fit: cover;
+
+        }
+    }
+    &__navber{
+        &-item{
+            @include Responsive(tabletL){
+                justify-content: center;
+            }
+            @include Responsive(tablet){
+                justify-content: start;
+            }
+        }
+    }
+    box-shadow: 0 -0.2rem 1.2rem rgba(0,0,0,0.3);
+    &__search{
+        &-box{
+            @include Responsive(tablet){
+                width: 100% !important;
+            }
+        }
+       
+        &-input{
+            outline: none;
+           width: 60rem;
+              @include Responsive(tablet){
+                width: 100% !important;
+                padding:2rem !important;
+            }
+        }
+        &-line{
+            width:0.2rem ;
+            height: 2.5rem;
+            background-color: $gray;
+        }
+    }
+}
